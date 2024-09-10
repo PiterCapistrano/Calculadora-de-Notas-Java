@@ -7,18 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="30dp"
-    android:text="@string/app_name"
-    android:textSize="20sp"
-    android:textColor="@color/white"
-    android:textStyle="bold"
-    android:textAlignment="center"
-    android:layout_centerHorizontal="true"
-    android:background="@color/purple_500"
-    />
-
     <EditText
         android:id="@+id/nota1"
         android:layout_width="wrap_content"
@@ -28,8 +16,8 @@
         android:background="@color/cinza_claro"
         android:textColorHint="@color/cinza_escuro"
         android:textColor="@color/black"
-        android:inputType="number"
-        android:maxLength="2"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
         android:gravity="center"
         android:padding="20dp"
         android:layout_alignParentStart="true"
@@ -46,8 +34,8 @@
         android:background="@color/cinza_claro"
         android:textColorHint="@color/cinza_escuro"
         android:textColor="@color/black"
-        android:inputType="number"
-        android:maxLength="2"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
         android:gravity="center"
         android:padding="20dp"
         android:layout_alignParentEnd="true"
@@ -64,8 +52,8 @@
         android:background="@color/cinza_claro"
         android:textColorHint="@color/cinza_escuro"
         android:textColor="@color/black"
-        android:inputType="number"
-        android:maxLength="2"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
         android:gravity="center"
         android:padding="20dp"
         android:layout_below="@id/nota1"
@@ -82,12 +70,12 @@
         android:background="@color/cinza_claro"
         android:textColorHint="@color/cinza_escuro"
         android:textColor="@color/black"
-        android:inputType="number"
-        android:maxLength="2"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
         android:gravity="center"
         android:padding="20dp"
         android:layout_below="@id/nota2"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginEnd="50dp"
         android:layout_marginTop="50dp"
         />
@@ -111,7 +99,7 @@
         />
 
     <Button
-        android:id="@+id/calcular"
+        android:id="@+id/btCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calcular"
@@ -129,11 +117,11 @@
         android:id="@+id/txt_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/aprovado"
+        android:text=""
         android:textColor="@color/verde"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_below="@id/calcular"
+        android:layout_below="@id/btCalcular"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         />
